@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, Ca
 
 const API = (
   import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.PROD ? 'https://gan-backend.onrender.com' : 'http://127.0.0.1:8001')
+  (import.meta.env.PROD ? 'https://gan-backend.onrender.com' : 'http://127.0.0.1:8000')
 ).replace(/\/$/, '');
 
 // ── tiny utilities ──
