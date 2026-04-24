@@ -3,8 +3,8 @@ services:
     name: gan-backend
     runtime: python
     rootDir: backend
-    buildCommand: python3 -m pip install -r requirements.txt
-    startCommand: python3 -m uvicorn main:app --host 0.0.0.0 --port $PORT
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
     healthCheckPath: /health
     envVars:
       - key: PYTHON_VERSION
