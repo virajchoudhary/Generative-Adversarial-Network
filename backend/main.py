@@ -10,7 +10,9 @@ from model import Generator, Critic
 app = FastAPI()
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
-device = torch.device("cuda" if torch.device.is_available() else "cpu")
+import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("Using device:", device)
 
 @app.get("/")
 def root():
