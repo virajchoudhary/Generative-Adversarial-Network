@@ -166,3 +166,7 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Project specific
+backend/data/
+
