@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts';
 
-const API = 'http://127.0.0.1:8000';
+const API = 'http://127.0.0.1:8001';
 
 // ── tiny utilities ──
 function debounce(fn, wait) {
