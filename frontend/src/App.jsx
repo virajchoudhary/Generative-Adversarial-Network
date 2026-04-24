@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts';
 
-const API = 'http://127.0.0.1:8001';
+const API = (
+  import.meta.env.VITE_API_BASE_URL ||
+  (import.meta.env.PROD ? 'https://gan-backend.onrender.com' : 'http://127.0.0.1:8001')
+).replace(/\/$/, '');
 
 // ── tiny utilities ──
 function debounce(fn, wait) {
