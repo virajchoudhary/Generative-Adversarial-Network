@@ -525,9 +525,6 @@ export default function App() {
                 <header className="app-header">
                     <h1>Wasserstein <span>GAN</span></h1>
                     <p>Interactive exploration of state-of-the-art generative modeling</p>
-                    <div className={`status-pill ${backendStatus.toLowerCase().split(' ')[0].replace('...', '')}`}>
-                        Backend: {backendStatus}
-                    </div>
                 </header>
                 <div className="page-content">
                     {tabs.find(t => t.id === activeTab).component}
