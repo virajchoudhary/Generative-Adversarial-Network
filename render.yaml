@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: fastapi-app
+    name: gan-backend
     env: python
     rootDir: backend
     buildCommand: pip install -r requirements.txt
