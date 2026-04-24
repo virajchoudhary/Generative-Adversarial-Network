@@ -100,7 +100,7 @@ def train_loop(req: TrainRequest):
 
         transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize([0.5], [0.5])])
         dataset = datasets.FashionMNIST(root="./data", train=True, download=True, transform=transform)
-        # subset for fast CPU training — full set would be too slow for interactive lab
+        # subset for fast CPU training — full set would be too slow for interactive testing
         if len(dataset) > 12000:
             indices = list(range(12000))
             dataset = torch.utils.data.Subset(dataset, indices)

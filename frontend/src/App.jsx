@@ -1003,7 +1003,7 @@ function AnalyseSection({ status, lossLog }) {
 function Footer() {
   return (
     <footer className="app-footer">
-      <span className="footer-copy">© Viraj Choudhary · ATML Lab 4</span>
+      <span className="footer-copy">© Viraj Choudhary</span>
       <div className="footer-links">
         <a href="https://github.com/virajchoudhary" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/virajchoudhary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
